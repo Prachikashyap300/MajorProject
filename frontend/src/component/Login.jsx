@@ -4,12 +4,13 @@ import "../App.css";
 
 const Login = () => {
   return (
-    <div className="myCard container mt-5 d-flex-column text-light">
-      <h1 className="pt-3 text-light text-center">Login</h1>
-      <form>
-        <div className="mb-3">
+    <div className="myCard container mt-2 d-flex-column">
+      <h4 className="text-start">Welcome !</h4>
+      <hr />
+      <form className="myForm">
+        <div className="mb-1">
           <label htmlFor="exampleInputEmail1" className="form-label">
-            Email address
+            Email
           </label>
           <input
             type="email"
@@ -18,7 +19,7 @@ const Login = () => {
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="exampleInputPassword1" className="form-label">
+          <label htmlFor="exampleInputPas sword1" className="form-label">
             Password
           </label>
           <input
@@ -27,13 +28,24 @@ const Login = () => {
             id="exampleInputPassword1"
           />
         </div>
-       
-        <button type="submit" className="btn btn-primary mb-5">
-          Submit
+
+        <button type="submit" className="submitButton btn w-100">
+          Login
         </button>
+        <br />
+        <hr />
+        <div className="text-center d-flex  justify-content-between align-items-end">
+          <p className="text-muted pt-2 text-sm">
+            Don't have an account?{" "}
+            <Link className="links text-danger" to="/signup">
+              Sign up
+            </Link>{" "}
+          </p>
+          <p className="text-muted pt-2 text-sm">Forgot password?</p>
+        </div>
       </form>
     </div>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;
