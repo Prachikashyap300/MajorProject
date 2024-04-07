@@ -1,15 +1,15 @@
 body{
     background-color:rgb(255, 255, 255);
-    display: flex;
+    font-size: 20px;
     justify-content: center;
-    font-size: 14px;
-    margin: 5%;
-    
 }
-.myCard{
-    padding: 30px;
-    width: 115%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)
+.myLoginCard{
+    margin-top: 7%;
+    padding: 40px;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+    border-radius: 10px;
+
 }
 form{
     display:flex;
@@ -20,14 +20,14 @@ form{
 }
 label{
     margin: 10px;
-    font-size: 0.8rem;
-}
-input{
-    font-size: 0.2rem;
-}
-/* .submitButton{
-    background-color: aqua;
     
-    &:hover {background-color:#b47b84e0; color: white;}
-} */
+}
+
+.mySignupCard{
+    margin-top: 30px;
+    padding: 40px;
+    width: 300%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+    border-radius: 10px;
+}
 
