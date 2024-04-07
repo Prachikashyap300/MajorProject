@@ -20,10 +20,14 @@ form{
 }
 label{
     margin: 10px;
+    font-size: 0.8rem;
 }
-.submitButton{
-    background-color: #038C8C;
-    color: white;
+input{
+    font-size: 0.2rem;
+}
+/* .submitButton{
+    background-color: aqua;
+    
     &:hover {background-color:#b47b84e0; color: white;}
-}
+} */
 
