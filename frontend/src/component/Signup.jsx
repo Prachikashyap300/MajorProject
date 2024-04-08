@@ -1,8 +1,8 @@
-import React from "react"
-import { Link } from "react-router-dom"
-import {useFormik} from "formik"
-import logo from "../assets/react.svg"
-import * as Yup from 'yup'
+import React from "react";
+import { Link } from "react-router-dom";
+import {useFormik} from "formik";
+import logo from "../assets/react.svg";
+import * as Yup from 'yup';
 
 const signupSchema = Yup.object().shape({
   inputFirstName: Yup.string()
@@ -29,8 +29,8 @@ const Signup = () => {
       inputConfirmPassword: ''
     }
   })
-}
 
+  return(
     <div className="container mySignupCard d-flex-column ">
       <div className="d-flex">
         {/* <img src={logo} className="p-1" alt="React Logo" /> */}
