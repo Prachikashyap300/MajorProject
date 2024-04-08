@@ -1,39 +1,54 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from '../assets/react.svg'
 import "../App.css";
 
 const Login = () => {
   return (
-    <div className="myCard container mt-5 d-flex-column text-light">
-      <h1 className="pt-3 text-light text-center">Login</h1>
-      <form>
-        <div className="mb-3">
+    <div className="myLoginCard container d-flex-column">
+     <div className="d-flex">
+        <img src={logo} className="p-1" alt="React Logo" />
+        <h4 className="text-start mt-1">Welcome !</h4>
+      </div>
+      <hr />
+      <form className="myLoginForm">
+        <div className="mb-1">
           <label htmlFor="exampleInputEmail1" className="form-label">
-            Email address
+            Email
           </label>
           <input
             type="email"
-            className="form-control"
+            className="form-control form-control-sm"
             id="exampleInputEmail1"
           />
         </div>
-        <div className="mb-3">
-          <label htmlFor="exampleInputPassword1" className="form-label">
+        <div className="mb-2">
+          <label htmlFor="exampleInputPas sword1" className="form-label">
             Password
           </label>
           <input
             type="password"
-            className="form-control"
+            className="form-control form-control-sm"
             id="exampleInputPassword1"
           />
         </div>
-       
-        <button type="submit" className="btn btn-primary mb-5">
-          Submit
+
+        <button type="submit" className="submitButton btn btn-warning btn-sm ">
+          Login
         </button>
+        <hr />
+        <div className="text-center d-flex  justify-content-between align-items-end ">
+          <p className="text-muted pt-2 text-sm">
+            Don't have an account?
+            <Link className="links text-danger" to="/signup">
+              Sign up
+            </Link>
+          </p>
+          <p className="text-muted pt-2 text-sm"><Link className="links text-primary" to="#">Forgot password?</Link></p>
+        </div>
       </form>
     </div>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;

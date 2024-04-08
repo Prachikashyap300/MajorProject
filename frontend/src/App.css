@@ -1,7 +1,33 @@
 body{
-    background-color: black;
+    background-color:rgb(255, 255, 255);
+    font-size: 20px;
+    justify-content: center;
 }
-.myCard{
-    width: 70%;
-    background-color: black;
+.myLoginCard{
+    margin-top: 7%;
+    padding: 40px;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+    border-radius: 10px;
+
 }
+form{
+    display:flex;
+    flex-direction:column;
+}
+.links{
+    text-decoration: none;
+}
+label{
+    margin: 10px;
+    
+}
+
+.mySignupCard{
+    margin-top: 30px;
+    padding: 40px;
+    width: 300%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+    border-radius: 10px;
+}
+
