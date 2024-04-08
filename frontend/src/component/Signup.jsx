@@ -29,14 +29,8 @@ const Signup = () => {
       inputConfirmPassword: ''
     }
   })
-  return (
-<<<<<<< HEAD
-    <div>
-        <h1></h1>
-    </div>
-  )
 }
-=======
+
     <div className="container mySignupCard d-flex-column ">
       <div className="d-flex">
         {/* <img src={logo} className="p-1" alt="React Logo" /> */}
@@ -60,7 +54,7 @@ const Signup = () => {
             <input type="text" className="form-control form-control-sm" id="inputLastName" inputPhone  />
           </div>
         </div>
->>>>>>> 608ce5fb1cff08659b3ef88b3d4ed10c0252a60c
+
 
         <div className="row mb-1">
         {/* input email */}
