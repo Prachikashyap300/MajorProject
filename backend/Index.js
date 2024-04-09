@@ -6,7 +6,7 @@ const port = 5000;
 const userRouter = require('./Routers/User');
 
 // Use the user router in the app
-app.use('/U   ser', userRouter);
+app.use('/User', userRouter);
 
 // Start the server
 app.listen(port, () => {
