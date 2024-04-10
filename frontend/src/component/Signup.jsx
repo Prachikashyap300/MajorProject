@@ -2,8 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import {useFormik} from "formik";
 import logo from "../assets/react.svg";
-import * as yup from 'Yup'; 
-
+import * as yup from 'Yup';
 
 const signupSchema = Yup.object().shape({
   inputFirstName: Yup.string()
